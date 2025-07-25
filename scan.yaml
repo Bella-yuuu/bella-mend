@@ -6,10 +6,10 @@ on:
       - main
 
 jobs:
-  scan:
+  call-mend-scan:
     uses: Bella-yuuu/bella-mend/.github/workflows/template.yml@main
     with:
       PRODUCT_NAME: "Bella_Github"
       PROJECT_NAME: "0725"
     secrets:
-      userKey: ${{ secrets.MEND_USERKEY }}
+      MEND_USERKEY: ${{ secrets.MEND_USERKEY }}
