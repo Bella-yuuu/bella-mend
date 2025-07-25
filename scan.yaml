@@ -9,7 +9,7 @@ jobs:
   scan:
     uses: CindyTsai0305/MEND-GitHub/.github/workflows/template.yml@main
     with:
-      PRODUCT_NAME: "Cindy_Github"
-      PROJECT_NAME: "0723"
+      PRODUCT_NAME: "Bella_Github"
+      PROJECT_NAME: "0725"
     secrets:
       userKey: ${{ secrets.MEND_USERKEY }}
