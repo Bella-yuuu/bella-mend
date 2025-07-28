@@ -9,6 +9,9 @@ on:
       PROJECT_NAME:
         required: true
         type: string
+      secrets:
+      userKey:
+        required: true
 
 jobs:
   scan:
