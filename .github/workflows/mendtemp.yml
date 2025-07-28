@@ -9,7 +9,7 @@ on:
       PROJECT_NAME:
         required: true
         type: string
-      secrets:
+    secrets:
       userKey:
         required: true
 
