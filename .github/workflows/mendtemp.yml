@@ -15,7 +15,7 @@ on:
 
 jobs:
   scan:
-    runs-on: windows-latest
+    runs-on: [self-hosted, windows] 
     env:
       USERKEY: ${{ secrets.MEND_USERKEY }}
     steps:
@@ -32,5 +32,5 @@ jobs:
       - name: 執行掃描腳本
         run: |
           echo "執行掃描..."
-          cmd.exe /c "C:\WS-OnlineScan\Scan.bat"
-
+          C:\WS-OnlineScan\Scan.bat
+        shell: cmd
