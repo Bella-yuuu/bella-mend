@@ -7,7 +7,7 @@ on:
 
 jobs:
   call-mend-scan:
-    uses: Bella-yuuu/bella-mend/.github/workflows/template.yml@main
+    uses: Bella-yuuu/bella-mend/.github/workflows/mendtemp.yml@main
     with:
       PRODUCT_NAME: "Bella_Github"
       PROJECT_NAME: "0725"
