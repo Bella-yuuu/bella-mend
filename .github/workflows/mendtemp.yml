@@ -15,24 +15,22 @@ on:
 
 jobs:
   scan:
-    runs-on: [self-hosted, windows] 
+    runs-on: [self-hosted, windows]
     env:
-      USERKEY: ${{ secrets.userkey }}
-    steps:
-      - name: 設定環境變數
-        run: |
-          echo PRODUCT_NAME=${{ inputs.PRODUCT_NAME }}>> %GITHUB_ENV%
-          echo PROJECT_NAME=${{ inputs.PROJECT_NAME }}>> %GITHUB_ENV%
-        shell: cmd
+      userKey: ${{ secrets.userKey }}
+      productName: ${{ inputs.PRODUCT_NAME }}
+      projectName: ${{ inputs.PROJECT_NAME }}
 
-      - name: 確認變數
+    steps:
+      - name: 確認環境變數
         run: |
-          echo PRODUCT_NAME=%PRODUCT_NAME%
-          echo PROJECT_NAME=%PROJECT_NAME%
+          echo userKey = %userKey%
+          echo productName = %productName%
+          echo projectName = %projectName%
         shell: cmd
 
       - name: 執行掃描腳本
         run: |
-          echo "執行掃描..."
+          echo 開始執行 Mend 掃描...
           C:\WS-OnlineScan\Scan.bat
         shell: cmd
