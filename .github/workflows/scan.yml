@@ -12,3 +12,4 @@ jobs:
       PRODUCT_NAME: "Bella_Github"
       PROJECT_NAME: "0725"
     secrets:
+      MEND_USERKEY: ${{ secrets.MEND_USERKEY }}
