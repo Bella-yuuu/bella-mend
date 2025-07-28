@@ -19,7 +19,7 @@ jobs:
     env:
       USERKEY: ${{ secrets.MEND_USERKEY }}
     steps:
-     - name: 設定環境變數
+      - name: 設定環境變數
         run: |
           echo PRODUCT_NAME=${{ inputs.PRODUCT_NAME }}>> %GITHUB_ENV%
           echo PROJECT_NAME=${{ inputs.PROJECT_NAME }}>> %GITHUB_ENV%
