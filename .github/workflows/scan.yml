@@ -10,6 +10,6 @@ jobs:
     uses: Bella-yuuu/bella-mend/.github/workflows/mendtemp.yml@main
     with:
       PRODUCT_NAME: "Bella_Github"
-      PROJECT_NAME: "0725"
+      PROJECT_NAME: "0728"
     secrets:
       MEND_USERKEY: ${{ secrets.MEND_USERKEY }}
