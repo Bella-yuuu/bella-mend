@@ -9,7 +9,7 @@ jobs:
   call-mend-scan:
     uses: Bella-yuuu/bella-mend/.github/workflows/template.yml@main
     with:
-      PRODUCT_NAME: "Bella_Github"
+      PRODUCT_NAME: "Cindy_Github"
       PROJECT_NAME: "0805"
     secrets:
       MEND_USERKEY: ${{ secrets.MEND_USERKEY }}
